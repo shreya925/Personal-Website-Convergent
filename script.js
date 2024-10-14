@@ -1,11 +1,15 @@
-// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const projects = [
+      { name: 'Evil Hangman', description: 'A hangman game using advanced data structures.' },
+      { name: 'WordFamily Comparator', description: 'An optimized WordFamily comparator for efficiency.' },
+      { name: 'Differential Equation Solver', description: 'Solver for first-order differential equations.' }
+  ];
 
-// Alert message when the page loads
-window.onload = function() {
-  alert("Welcome to my first web page!");
-};
-
-// Function to change the text when button is clicked
-function changeText() {
-  document.getElementById("myParagraph").innerText = "You clicked the button!";
-}
+  const projectList = document.getElementById('project-list');
+  
+  projects.forEach(project => {
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${project.name}</strong>: ${project.description}`;
+      projectList.appendChild(li);
+  });
+});
