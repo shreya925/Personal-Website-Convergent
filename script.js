@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projects = [
-      { name: 'Evil Hangman', description: 'A hangman game using advanced data structures.' },
-      { name: 'WordFamily Comparator', description: 'An optimized WordFamily comparator for efficiency.' },
-      { name: 'Differential Equation Solver', description: 'Solver for first-order differential equations.' }
+      { name: 'Mental Matters', description: 'A website to educate teenagers about mental health and provide coping strategies.' },
+      { name: 'Tech Tech', description: 'A Tech Technician that helps you discover an appropriate career in tech based on your answers to a quiz that asks about your strengths, personality, and personal preferences.' },
+      { name: 'Carbon Footprint', description: 'A quiz that informs the user how much they are affecting the environment based on the points they earn from a quiz.' }
   ];
 
   const projectList = document.getElementById('project-list');
